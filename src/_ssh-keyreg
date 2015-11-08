@@ -1,0 +1,15 @@
+#compdef ssh-keyreg
+
+local curcontext="$curcontext" state line
+local -A opt_args
+
+_arguments -C \
+  '(- :)'{-h,--help}'[Show this help and exit]' \
+  '(-p --path)'{-p,--path}'[Specify the path of public key]:public keys:_files -W ~/.ssh -g "*.pub"' \
+  '(-u --user)'{-u,--user}'[Specify username]:username:(${$(git config --get user.name)} $USER)' \
+  '(-d --desc)'{-d,--desc}'[Set desctiption to the registration]' \
+  '(-)*: :(github bitbucket)' && ret=0
+
+return ret
+
+# vim: ft=zsh sw=2 ts=2 et
