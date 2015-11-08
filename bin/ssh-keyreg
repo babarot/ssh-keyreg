@@ -1,4 +1,6 @@
 #!/bin/bash
+# Author:  BABAROT (@b4b4r07)
+# License: MIT License
 
 # references
 # * {http://unix.stackexchange.com/questions/136894/
@@ -78,6 +80,7 @@ case "$servies" in
             https://api.github.com/user/keys
         )"
         ;;
+
     bitbucket)
         result="$(
         curl -u "${user:=$USER}" \
@@ -88,6 +91,7 @@ case "$servies" in
         ;;
 esac
 
+# check if upload is completed successfully
 ssh -T git@github.com 2>&1 | grep "success"
 if [[ $? -ne 0 ]]; then
     die "sorry, try again"
