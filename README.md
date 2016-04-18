@@ -44,10 +44,11 @@ $ ssh-keyreg --path id_rsa.rub github
 
 ## Installation
 
-### Using [Antigen](https://github.com/zsh-users/antigen) for zsh user
+### Using [Antigen](https://github.com/b4b4r07/zplug) for zsh user
 
 ```console
-$ antigen bundle b4b4r07/ssh-keyreg
+$ zplug "b4b4r07/ssh-keyreg", as:command, use:bin
+$ zplug install
 ```
 
 ### Antigen-free install
