@@ -65,7 +65,7 @@ done
 
 desc="${desc:-$(date +%D)}"
 user="${user:-$(git config --get user.name)}"
-path="${path:-~/.ssh/id_rsa.pub}"
+path="${path:-$HOME/.ssh/id_rsa.pub}"
 title="$(hostname) ($desc)"
 
 # check if the path is available
