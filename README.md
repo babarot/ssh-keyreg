@@ -56,7 +56,7 @@ $ zplug install
 To install this tool without Antigen:
 
 ```console
-$ sudo sh -c "curl https://github.com/b4b4r07/ssh-keyreg/blob/master/bin/ssh-keyreg -o /usr/local/bin/ssh-keyreg && chmod +x /usr/local/bin/ssh-keyreg"
+$ sudo sh -c "curl https://raw.githubusercontent.com/b4b4r07/ssh-keyreg/master/bin/ssh-keyreg -o /usr/local/bin/ssh-keyreg && chmod +x /usr/local/bin/ssh-keyreg"
 ```
 
 ssh-keyreg is a shell script, so put it somewhere and make sure it's added to your `$PATH`.
