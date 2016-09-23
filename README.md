@@ -44,16 +44,16 @@ $ ssh-keyreg --path id_rsa.rub github
 
 ## Installation
 
-### Using [Antigen](https://github.com/b4b4r07/zplug) for zsh user
+### Using [zplug](https://github.com/b4b4r07/zplug) for zsh user
 
 ```console
 $ zplug "b4b4r07/ssh-keyreg", as:command, use:bin
 $ zplug install
 ```
 
-### Antigen-free install
+### zplug-free install
 
-To install this tool without Antigen:
+To install this tool without zplug:
 
 ```console
 $ sudo sh -c "curl https://raw.githubusercontent.com/b4b4r07/ssh-keyreg/master/bin/ssh-keyreg -o /usr/local/bin/ssh-keyreg && chmod +x /usr/local/bin/ssh-keyreg"
